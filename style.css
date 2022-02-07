@@ -21,6 +21,19 @@ img {
     border-radius: 50%;
   margin-bottom: 12px
 }
+
+@keyframes spinning {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+  }
+  .spinhov:hover {
+    animation-name: spinning;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    /* linear | ease | ease-in | ease-out | ease-in-out */
+    animation-timing-function: ease-out;
+  }
+
 #about {
   margin-top: 30px;
   color:white;
